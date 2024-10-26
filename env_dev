@@ -1,0 +1,22 @@
+COMPOSE_PROJECT_NAME="oehealth"
+# Backend
+export DJANGO_SETTINGS_MODULE="backend.settings"
+export ALLOWED_CLIENT_HOSTS="oehealth.devxhub.com,oehealth-api.devxhub.com,api:8000,api"
+export TRUSTED_CORS_ORIGINS="https://oehealth.devxhub.com,http://oehealth.devxhub.com,http://localhost,capacitor://localhost,http://localhost:3000"
+export STATIC_URL="/static/"
+export DEBUG=0
+export DB_HOST=db
+export REDIS_HOST=redis
+export REDIS_PASSWORD=JE86vlSE4xLGIJNDGd66LoAvdfNzvJV7rzUvjik3
+export CELERY_BROKER_URL="redis://:password@redis:6379/0"
+# Frontend
+export API_CLIENT="https://oehealth-api.devxhub.com"
+export API_SERVER="http://api:8000"
+export WS_CLIENT="wss://oehealth-api.devxhub.com"
+export WS_SERVER="wss://oehealth-api.devxhub.com"
+export SITE_URL="https://oehealth.devxhub.com"
+export EMAIL_HOST='smtp.mailtrap.io'
+export EMAIL_HOST_USER='3f57fa71bb8322'
+export EMAIL_HOST_PASSWORD='187c764f5c24be'
+export EMAIL_PORT='2525'
+export DEFAULT_FROM_EMAIL=eliyas.devxhub@gmail.com

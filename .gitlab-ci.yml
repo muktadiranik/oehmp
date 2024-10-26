@@ -1,0 +1,22 @@
+stages:
+  - deploy
+
+variables:
+  SSH_HOST: 188.165.253.59
+  SSH_USER: ogap
+
+deploy:
+  stage: deploy
+  only:
+    - dev
+  image: alpine
+  before_script:
+    - which ssh-agent || apk --update --no-cache add openssh-client
+    - eval $(ssh-agent -s)
+    - cat $SSH_PRIVATE_KEY | ssh-add -
+    - mkdir -p ~/.ssh
+    - ssh-keyscan ${SSH_HOST} > ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts
+  script:
+    - ssh ${SSH_USER}@${SSH_HOST} "cd ~/oehealth; git fetch ; git reset --hard @{u} ; git clean -f -d ; git submodule foreach --recursive git reset --hard && git submodule update --init --recursive"
+    - ssh ${SSH_USER}@${SSH_HOST} "sudo systemctl restart docker-compose-app.service"

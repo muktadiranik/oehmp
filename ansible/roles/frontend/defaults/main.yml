@@ -1,0 +1,3 @@
+repo_path: "{{ ansistrano_deploy_to }}/{{ ansistrano_current_dir }}"
+frontend_project_path: "{{ repo_path }}/frontend/website"
+frontend_project_name: "oehealth"

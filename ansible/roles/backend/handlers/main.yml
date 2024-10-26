@@ -1,0 +1,12 @@
+---
+- name: restart gunicorn
+  supervisorctl: name={{ backend_project_name }}_gunicorn state=restarted
+
+- name: restart daphne
+  supervisorctl: name={{ backend_project_name }}_daphne state=restarted
+
+- name: restart celery
+  supervisorctl: name={{ backend_project_name }}_celery state=restarted
+
+- name: restart celerybeat
+  supervisorctl: name={{ backend_project_name }}_celerybeat state=restarted

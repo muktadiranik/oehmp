@@ -1,0 +1,16 @@
+[program:{{ backend_project_name }}_celerybeat]
+command={{ virtualenv_path }}/bin/celerybeat_start
+
+user={{ gunicorn_user }}
+stdout_logfile={{ application_log_file4 }}
+redirect_stderr=true
+autostart=true
+autorestart=true
+startsecs=10
+
+; Causes supervisor to send the termination signal (SIGTERM) to the whole process group.
+stopasgroup=true
+
+; if rabbitmq is supervised, set its priority higher
+; so it starts first
+priority=999

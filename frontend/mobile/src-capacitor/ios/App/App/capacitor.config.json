@@ -1,0 +1,7 @@
+{
+	"appId": "com.teethwallet",
+	"appName": "TeethWallet",
+	"bundledWebRuntime": false,
+	"npmClient": "yarn",
+	"webDir": "www"
+}

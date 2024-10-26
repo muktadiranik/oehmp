@@ -1,0 +1,12 @@
+{
+    "type": "service_account",
+    "project_id": "oralhealth-380514",
+    "private_key_id": "575f1fa0eaa122cd60d532ad120604e6f0f2136a",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDVLboW3k1t0NBi\n0CK0mCnirwCWg4r938Pyq0bulKN+QdxFX+UxVrMQPpkpUdi7W2scLCxbZufoq8fU\nS5qfo+S69gUJnVMUQ3pzufU0KGkJH/LN0ama40DlnkXfIMyHc9zn6bBPIHhi8uYs\n1cKpxZP2lIeC8OjD9Qauj0CerTHp6zndti+/+wsH4h8vBEOU+K6gXNNaVC+jAgTH\ntWyQKOm3CHUyCi0VZqGdEDcfqIVH/HIL6eLqr9fCnxHYDUY/RX1MG6ZMZ1W5wRUF\nfOFDUIYA/XAps8M0q429fpkj0JOXNpEoXiz4Lp/b9MpUIkh55BiQ3Ly2Ms3Odbj2\njoAZFstTAgMBAAECggEAU4iSCWD9xUDUT0wQtWSE0TNTDyengLi8rywHZPiwogpL\ntpGPnUhEbWKiIKtWOoBllcoHbZ+C00zwxlMD2Xde6xX5Pl28Ds4sPwnIuDH3iqBO\nw/DavXs8VF2zMm5HRvKTRvru3+qw0dEtebcfiugFhVOJUDl3dEXg4uj2YNcsHmUb\njCq7guJ7bnfU7VmnpMvZwiJou1O85KxscjRq09Ohy7QjMxU7kD3fw4CwcVhk8Mrn\nsaom+C/NwN33RxpXfv4p6m3IQPCzP0g8URO+8nHOfQ8ss+a4PI7TncS29J/gsSsR\nGva4buH8aoCiRbeZFo4FtbFjw49RaQL33gJl38ksfQKBgQDu+Nfh0V23jUbnO2S4\nrY1GMj2Yvi7zJ2eM4zu9Xfl+BrgBw+8dAO34PpxKKGcGDiFTz9vg1f5nif6BezkP\nQ5JhxgptiwnGULLFXG8+8OhoktEci8/KdtLduA4oUfA4J0olEVz5s7MnMpxGn01w\nYjKR6E8gdWgV9ey2x+K85M8BBwKBgQDkXmDkWliKCvhAhyIv1LLQFt/qFK/MYFDn\nSTHqKwxPUc/lZ41P5QGXSXv3Rej/Vha0s2QYmL17KPv0gIVBz5Ea+DJH6lofxs5n\n+IXSJkxA1JRaFe3HiJaZQcLfzrP6gvN7d1k1pN1zQ3sHOCURnDNgA0WbcjXtI9Rj\nQJZC5A/sVQKBgQCZgiqTef2cslkworuR0pKk3BMrckgQlGh1XWb7v0lMhp5fK/EH\nDZjQVc/p50g+4IbSIv0Y0f5JnqBpprFBt+NpgWEjeyQ9S4t7MmSX5wM0YdOIZduG\nMIxGNzyI9BG+0KZVZ3D1SlU0QdOXni+NmNbpWXSy4hiJut9jjsV9F/JNswKBgAyC\ndwBLSqpVK4AtZtwD5L+tYRqrg23IoOXqhodzUDtQGflRENadjtbAub+z3q2OA7Rm\nV0dZppeGiTa9i48tVZ+KlQaHeeRfuZLMdFgsrOSoQHAm312cx9MhXRFxez5vyfKr\neQGNRGw5+BVPKAis68uIoll/iiCxY8MEGLcVUyH5AoGBAMwpkXEjml18p/iYUHRS\n5Ma4cjFHnxHyLwWt9FRwJ69Jh+oRFrV4j/4Z11t2LXKM/5R08+EJksLAQDyPagOv\nT4oMLnXbaO6y8NaptQ8D7sHJcNPXBEbNlLHr9qHO6vWVdB6NXCibUPhAj+pFxbn5\n4hOfoyvW7evZ8wQQTeHRkyJ+\n-----END PRIVATE KEY-----\n",
+    "client_email": "firebase-adminsdk-5tlwn@oralhealth-380514.iam.gserviceaccount.com",
+    "client_id": "106938453097865390199",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-5tlwn%40oralhealth-380514.iam.gserviceaccount.com"
+}

@@ -1,0 +1,22 @@
+#!/bin/sh
+
+NAME="{{ backend_project_name }}"
+DJANGODIR="{{ backend_project_path }}"
+USER={{ gunicorn_user }}
+GROUP={{ gunicorn_group }}
+
+echo "Starting $NAME as `whoami`"
+
+# Activate the virtual environment.
+cd $DJANGODIR
+. {{ virtualenv_path }}/bin/activate
+
+# Set additional environment variables.
+. {{ virtualenv_path }}/bin/postactivate
+
+# Create the run directory if it doesn't exist.
+RUNDIR=$(dirname $SOCKFILE)
+test -d $RUNDIR || mkdir -p $RUNDIR
+
+# Programs meant to be run under supervisor should not daemonize themselves
+exec celery -A $NAME beat --schedule /var/lib/celery/beat.db --loglevel=INFO

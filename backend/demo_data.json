@@ -1,0 +1,401 @@
+[
+    {
+        "model": "api.company",
+        "pk": 1,
+        "fields": {
+            "name": "Diogo Duarte",
+            "street": "Rotunda do Espinho",
+            "street1": "",
+            "city": "Viseu",
+            "zip": "3500-355",
+            "vat": "PT513695257",
+            "country": "PT",
+            "has_invoice_address": false,
+            "invoice_street": "",
+            "invoice_street1": "",
+            "invoice_city": "",
+            "invoice_zip": "",
+            "invoice_country": null
+        }
+    },
+    {
+        "model": "api.company",
+        "pk": 2,
+        "fields": {
+            "name": "Burgundy Castle LTDA",
+            "street": "The street",
+            "street1": "",
+            "city": "Burgundy",
+            "zip": "1100-222",
+            "vat": "PT65498785",
+            "country": "Franch",
+            "has_invoice_address": false,
+            "invoice_street": "",
+            "invoice_street1": "",
+            "invoice_city": "",
+            "invoice_zip": "",
+            "invoice_country": null
+        }
+    },
+    {
+        "model": "api.assistant",
+        "pk": 1,
+        "fields": {
+            "name": "Rafael Figueredo",
+            "company": 1,
+            "user": 6
+        }
+    },
+    {
+        "model": "api.assistant",
+        "pk": 2,
+        "fields": {
+            "name": "Rosa Machado",
+            "company": 1,
+            "user": 7
+        }
+    },
+    {
+        "model": "api.assistant",
+        "pk": 3,
+        "fields": {
+            "name": "Maria Clara",
+            "company": 1,
+            "user": 8
+        }
+    },
+    {
+        "model": "api.assistant",
+        "pk": 4,
+        "fields": {
+            "name": "Douglas Pereira",
+            "company": 1,
+            "user": 9
+        }
+    },
+    {
+        "model": "api.assistant",
+        "pk": 5,
+        "fields": {
+            "name": "Carlos da Cunha",
+            "company": 1,
+            "user": 10
+        }
+    },
+    {
+        "model": "api.assistant",
+        "pk": 6,
+        "fields": {
+            "name": "Tortola Abs",
+            "company": 1,
+            "user": 11
+        }
+    },
+    {
+        "model": "api.doctor",
+        "pk": 1,
+        "fields": {
+            "name": "Rodrigo Matias",
+            "company": 1,
+            "is_company_owner": 1
+        }
+    },
+    {
+        "model": "api.doctor",
+        "pk": 2,
+        "fields": {
+            "name": "Francisco Plenus",
+            "company": 1
+        }
+    },
+    {
+        "model": "api.doctor",
+        "pk": 3,
+        "fields": {
+            "name": "Doutor Paciente",
+            "company": 1
+        }
+    },
+    {
+        "model": "api.patient",
+        "pk": 1,
+        "fields": {
+            "name": "Paciente um",
+            "current_doctor": 1
+        }
+    },
+    {
+        "model": "api.patient",
+        "pk": 2,
+        "fields": {
+            "name": "Paciente dois",
+            "current_doctor": 1
+        }
+    },
+    {
+        "model": "api.patient",
+        "pk": 3,
+        "fields": {
+            "name": "Doutor Paciente"
+        }
+    },
+    {
+        "model": "api.patient_previous_doctors",
+        "pk": 1,
+        "fields": {
+            "patient_id": 1,
+            "doctor_id": 2
+        }
+    },
+    {
+        "model": "api.pendingauthorizationtype",
+        "pk": 1,
+        "fields": {
+            "name": "DOCTOR_ADD_PATIENT"
+        }
+    },
+    {
+        "model": "api.pendingauthorizationtype",
+        "pk": 2,
+        "fields": {
+            "name": "PATIENT_ADD_MANAGED_PATIENT"
+        }
+    },
+    {
+        "model": "api.user",
+        "pk": 1,
+        "fields": {
+            "username": "pacienteum",
+            "first_name": "Paciente",
+            "last_name": "Um",
+            "avatar": "https://i.pravatar.cc/32",
+            "is_staff": false,
+            "password": "pbkdf2_sha256$260000$gzXlpV2wP8BuogVu0Nz9GY$fSLgwlNL6VZFQWsXmqTkALXPn8q1HRZTrL7YcWw2z2U=",
+            "email": "pacienteum@odoogap.com",
+            "is_superuser": false,
+            "patient": 1
+        }
+    },
+    {
+        "model": "api.user",
+        "pk": 2,
+        "fields": {
+            "username": "pacientedois",
+            "first_name": "Paciente",
+            "last_name": "Dois",
+            "avatar": "https://i.pravatar.cc/32",
+            "is_staff": false,
+            "password": "pbkdf2_sha256$260000$gzXlpV2wP8BuogVu0Nz9GY$fSLgwlNL6VZFQWsXmqTkALXPn8q1HRZTrL7YcWw2z2U=",
+            "email": "pacientedois@odoogap.com",
+            "is_superuser": false,
+            "patient": 2
+        }
+    },
+    {
+        "model": "api.user",
+        "pk": 3,
+        "fields": {
+            "username": "doutorum",
+            "first_name": "Doutor",
+            "last_name": "Um",
+            "avatar": "https://i.pravatar.cc/26?img=2",
+            "is_staff": false,
+            "password": "pbkdf2_sha256$260000$gzXlpV2wP8BuogVu0Nz9GY$fSLgwlNL6VZFQWsXmqTkALXPn8q1HRZTrL7YcWw2z2U=",
+            "email": "doutorum@odoogap.com",
+            "is_superuser": false,
+            "doctor": 1
+        }
+    },
+    {
+        "model": "api.user",
+        "pk": 4,
+        "fields": {
+            "username": "doutordois",
+            "first_name": "Doutor",
+            "last_name": "Um",
+            "avatar": "https://i.pravatar.cc/32?img=3",
+            "is_staff": false,
+            "password": "pbkdf2_sha256$260000$gzXlpV2wP8BuogVu0Nz9GY$fSLgwlNL6VZFQWsXmqTkALXPn8q1HRZTrL7YcWw2z2U=",
+            "email": "doutordois@odoogap.com",
+            "is_superuser": false,
+            "doctor": 2
+        }
+    },
+    {
+        "model": "api.user",
+        "pk": 5,
+        "fields": {
+            "username": "doutorpaciente",
+            "first_name": "Doutor",
+            "last_name": "Paciente",
+            "avatar": "https://i.pravatar.cc/32?img=3",
+            "is_staff": false,
+            "password": "pbkdf2_sha256$260000$gzXlpV2wP8BuogVu0Nz9GY$fSLgwlNL6VZFQWsXmqTkALXPn8q1HRZTrL7YcWw2z2U=",
+            "email": "doutordois@odoogap.com",
+            "is_superuser": false,
+            "doctor": 3,
+            "patient": 3
+        }
+    },
+    {
+        "model": "api.user",
+        "pk": 6,
+        "fields": {
+            "username": "assistant1",
+            "first_name": "assistant1",
+            "last_name": "last",
+            "avatar": "https://i.pravatar.cc/32?img=3",
+            "is_staff": false,
+            "password": "pbkdf2_sha256$260000$gzXlpV2wP8BuogVu0Nz9GY$fSLgwlNL6VZFQWsXmqTkALXPn8q1HRZTrL7YcWw2z2U=",
+            "email": "assistant1@odoogap.com",
+            "is_superuser": false
+        }
+    },
+    {
+        "model": "api.user",
+        "pk": 7,
+        "fields": {
+            "username": "assistant2",
+            "first_name": "assistant2",
+            "last_name": "last",
+            "avatar": "https://i.pravatar.cc/32?img=3",
+            "is_staff": false,
+            "password": "pbkdf2_sha256$260000$gzXlpV2wP8BuogVu0Nz9GY$fSLgwlNL6VZFQWsXmqTkALXPn8q1HRZTrL7YcWw2z2U=",
+            "email": "assistant2@odoogap.com",
+            "is_superuser": false
+        }
+    },
+    {
+        "model": "api.user",
+        "pk": 8,
+        "fields": {
+            "username": "assistant3",
+            "first_name": "assistant3",
+            "last_name": "last",
+            "avatar": "https://i.pravatar.cc/32?img=3",
+            "is_staff": false,
+            "password": "pbkdf2_sha256$260000$gzXlpV2wP8BuogVu0Nz9GY$fSLgwlNL6VZFQWsXmqTkALXPn8q1HRZTrL7YcWw2z2U=",
+            "email": "assistant3@odoogap.com",
+            "is_superuser": false
+        }
+    },
+    {
+        "model": "api.user",
+        "pk": 9,
+        "fields": {
+            "username": "assistant4",
+            "first_name": "assistant4",
+            "last_name": "last",
+            "avatar": "https://i.pravatar.cc/32?img=3",
+            "is_staff": false,
+            "password": "pbkdf2_sha256$260000$gzXlpV2wP8BuogVu0Nz9GY$fSLgwlNL6VZFQWsXmqTkALXPn8q1HRZTrL7YcWw2z2U=",
+            "email": "assistant4@odoogap.com",
+            "is_superuser": false
+        }
+    },
+    {
+        "model": "api.user",
+        "pk": 10,
+        "fields": {
+            "username": "assistant5",
+            "first_name": "assistant5",
+            "last_name": "last",
+            "avatar": "https://i.pravatar.cc/32?img=3",
+            "is_staff": false,
+            "password": "pbkdf2_sha256$260000$gzXlpV2wP8BuogVu0Nz9GY$fSLgwlNL6VZFQWsXmqTkALXPn8q1HRZTrL7YcWw2z2U=",
+            "email": "assistant5@odoogap.com",
+            "is_superuser": false
+        }
+    },
+    {
+        "model": "api.user",
+        "pk": 11,
+        "fields": {
+            "username": "assistant6",
+            "first_name": "assistant6",
+            "last_name": "last",
+            "avatar": "https://i.pravatar.cc/32?img=3",
+            "is_staff": false,
+            "password": "pbkdf2_sha256$260000$gzXlpV2wP8BuogVu0Nz9GY$fSLgwlNL6VZFQWsXmqTkALXPn8q1HRZTrL7YcWw2z2U=",
+            "email": "assistant6@odoogap.com",
+            "is_superuser": false
+        }
+    },
+    {
+        "model": "api.author",
+        "pk": 1,
+        "fields": {
+            "name": "Diogo Duarte",
+            "image": "https://i.pravatar.cc/50?img=4",
+            "slug": "xxx",
+            "linkedin_profile": "https://www.linkedin.com/in/diogocarvalhoduarte/",
+            "twitter_profile": "",
+            "instagram_profile": "",
+            "facebook_profile": "",
+            "resume": ""
+        }
+    },
+    {
+        "model": "api.contenttags",
+        "pk": 1,
+        "fields": {
+            "name": "Tooth Decay",
+            "slug": "tooth-decay"
+        }
+    },
+    {
+        "model": "api.contenttags",
+        "pk": 2,
+        "fields": {
+            "name": "Dental Care",
+            "slug": "dental-care"
+        }
+    },
+    {
+        "model": "api.contenttags",
+        "pk": 3,
+        "fields": {
+            "name": "Operations",
+            "slug": "dental-operations"
+        }
+    },
+    {
+        "model": "api.pagecontent",
+        "pk": 1,
+        "fields": {
+            "title": "Tooth Decay",
+            "subtitle": "Dental Caries in Permanent (Adult) Teeth",
+            "body": "Simply click install.  \n# Here is a header  \n* And an indent  \n * Indented bullet  \n     * And another indent bullet",
+            "image": "https://picsum.photos/475/375?random=1",
+            "pub_date": "2021-07-14T09:40:55Z",
+            "change_date": "2021-07-14T09:40:56Z",
+            "slug": "tooth-decay",
+            "language_code": "en",
+            "type": "blog",
+            "author": 1,
+            "tags": [
+                1,
+                3
+            ]
+        }
+    },
+    {
+        "model": "api.pagecontent",
+        "pk": 2,
+        "fields": {
+            "title": "Monitoring of Tooth Movement",
+            "subtitle": "Monitoring of Tooth Movement is Fundamental",
+            "body": "Effective and optimal tooth movement is needed to achieve the planned change in tooth position. Monitoring of tooth movement can be achieved by analyzing progress intraoral scans with dedicated software programs, such as Ortho-Analyser. Recently, a new monitoring system for orthodontics was introduced by a company called Dental Monitoring. The Dental Monitoring website allows the orthodontist to create new patient files, upload their three-dimensional (3D) impressions, view the photos the patient has uploaded, and monitor their treatment. Before monitoring begins, the orthodontist has to provide recent, accurate plaster models, PVS impressions, or intraoral scans of a specific patient. 3D matching of images and the initial digital dental model is possible and visualizes the actual movement of the dentition in the selected period of time. The rapport of this analysis of tooth movement in 3D includes a graph, showing the tooth movement velocity of each tooth.  \n## Images  \n![Minion](https://octodex.github.com/images/minion.png)    \n![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg \"The Stormtroopocat\")Like links, Images also have a footnote style syntax",
+            "image": "https://picsum.photos/475/375?random=1",
+            "pub_date": "2021-07-14T09:47:43Z",
+            "change_date": "2021-07-14T09:47:45Z",
+            "slug": "tooth-movement",
+            "language_code": "en",
+            "type": "blog",
+            "author": 1,
+            "tags": [
+                2
+            ]
+        }
+    }
+]

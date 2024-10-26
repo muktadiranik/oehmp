@@ -1,0 +1,54 @@
+deploy_frontend: true
+deploy_backend: true
+
+application_name: oehealth
+frontend_project_name: frontend
+backend_project_name: backend
+db_name: ohealth
+db_user: ohealth
+db_password: ohealth
+
+postgresql_databases:
+  - name: "{{ db_name }}"
+    # state: "absent"
+postgresql_users:
+  # - name: "{{ secret_db_user }}"
+  - name: "{{ db_user }}"
+    password: "{{ db_password }}"
+
+update_apt_cache: true
+
+frontend_server_name: teethwallet.com
+backend_server_name: api.teethwallet.com
+ansistrano_deploy_to: "/var/www/oehealth"
+ansistrano_version_dir: "releases"
+ansistrano_current_dir: "current"
+ansistrano_current_via: "symlink"
+ansistrano_keep_releases: 1
+ansistrano_deploy_via: git
+ansistrano_git_repo: https://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@github.com/devxhubcom/oehmp.git
+ansistrano_git_branch: main
+
+# Certbot for SSL
+certbot_create_if_missing: true
+certbot_admin_email: eliyas@devxhub.com
+certbot_certs:
+  - domains:
+      - teethwallet.com
+      - api.teethwallet.com
+
+# Redis
+redis_port: 6379
+redis_bind_interface: 127.0.0.1
+redis_requirepass: "JE86vlSE4xLGIJNDGd66LoAvdfNzvJV7rzUvjik3"
+
+# RabbitMQ
+rabbitmq_version: "3.11.10"
+
+# Nodejs
+fnm_root_suffix: ".fnm"
+fnm_nodejs_versions:
+  - v16.18.0
+fnm_npm_global_packages:
+  - name: yarn
+  - name: pm2

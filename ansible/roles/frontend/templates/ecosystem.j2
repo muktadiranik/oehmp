@@ -1,0 +1,21 @@
+module.exports = {
+  apps: [
+    {
+      name: "{{ application_name }}",
+      exec_mode: "cluster",
+      instances: "max",
+      script: "{{ frontend_project_path }}/node_modules/nuxt/bin/nuxt.js",
+      args: "start",
+      autorestart: true,
+      env: {
+        NODE_ENV: "production",
+        HOST: "0.0.0.0",
+        PORT: 3000,
+        API_CLIENT: "https://{{ backend_server_name }}",
+        API_SERVER: "http://localhost:8000",
+        WS_CLIENT: "wss://{{ backend_server_name }}",
+        SITE_URL: "https://{{ frontend_server_name }}",
+      },
+    },
+  ],
+}
